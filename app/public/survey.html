@@ -182,7 +182,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="matchName"></h2>
-	        <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+	        <img id="matchImg" src="" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -192,7 +192,7 @@
 	  </div>
 	</div>
 
-    
+
     <script type="text/javascript">
       	<!-- // Chosen CSS -->
        var config = {
@@ -239,6 +239,15 @@
     	    	// Grab the URL of the website
     	    	var currentURL = window.location.origin;
 
+    	    	// $.get(currentURL + "/api/friends", userData, function(data) {
+    	    	// 	var inputArray = [];
+    	    	// 	var inputScore = userData.scores;
+    	    	// 	for (i = o; i < inputScore.length; i++) {
+    	    	// 		var numInput = Number(inputScore[i]);
+    	    	// 		inputArray.push(numInput);
+    	    	// 	};
+    	    	// 	var inputTotal = inputArray.reduce(add, 0);
+    	    	// })
     	    	// AJAX post the data to the friends API. 
     	    	$.post(currentURL + "/api/friends", userData, function(data){
 
